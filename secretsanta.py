@@ -20,7 +20,7 @@ def match(names):
 	return matchlist
 	
 def sendmail(recipient, to_addr):
-	header = 'From: forever2secretsanta@gmail.com\n'
+	header = 'From: %s\n' % Sender
 	header += 'To: %s\n' % to_addr
 	header += 'Subject: Secret Santa round 2 w0w\n\n' 
 	message = header + 'you got ' + recipient + ' for secret santa'
