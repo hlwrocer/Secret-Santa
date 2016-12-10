@@ -32,8 +32,8 @@ def sendmail(recipient, to_addr):
 		smtpObj.quit()
 		print "Successfully sent email"
 	except smtplib.SMTPException, e:
-		print "Error unable to send email: " + e
-		
+		print "Error unable to send email: " + str(e)
+							  
 		
 def secretsanta(people):
 	names = list(people.keys())
